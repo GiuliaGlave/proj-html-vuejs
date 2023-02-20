@@ -40,3 +40,8 @@ button {
 .row {
   background-color: fuchsia;
 }
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
