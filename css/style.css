@@ -1,3 +1,4 @@
+/* GENERAL */
 #app {
   background-color: rgba(255, 253, 139, 0.801);
   width: 100vw;
@@ -6,19 +7,36 @@
 
 .container {
   background-color: darkgrey;
-  height: 200px;
+  padding: 2rem;
   margin-top: 2px;
 }
 
 .container-fluid {
   background-color: darkorchid;
-  height: 200px;
+
   margin-top: 2px;
+  padding: 2rem;
 }
 
 header.container-fluid,
 footer.container-fluid {
   background-color: blue;
-  height: 200px;
+  height: 50px;
   width: 100%;
+}
+
+.content {
+  background-color: coral;
+}
+
+button {
+  background-color: red;
+}
+
+.col {
+  background-color: pink;
+  padding: 1rem;
+}
+.row {
+  background-color: fuchsia;
 }
