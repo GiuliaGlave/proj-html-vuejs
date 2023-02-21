@@ -20,6 +20,7 @@
 
 body {
   margin: auto;
+  color: var(--white-text);
   font-family: "roboto", sans-serif;
 }
 
@@ -35,8 +36,13 @@ body {
   font-size: 2rem;
 }
 .text-title-section {
-  color: var(--white-text);
-  font-size: 1rem;
+  color: var(--orange-text);
+
+  font-weight: bold;
+}
+
+small {
+  color: var(--orange-text);
 }
 
 /* BUTTONS */
@@ -82,18 +88,17 @@ nav {
   background-repeat: no-repeat;
   height: 45rem;
 }
-.container {
-  /* background-color: darkgrey; */
-  width: 70%;
-  padding: 2rem;
-  margin-top: 2px;
-}
 
 /* SECTION 1 */
 
 .seal {
   position: absolute;
   left: 80rem;
+}
+
+/* ALL PRODUCTS */
+.products {
+  background-image: var(--shop-bg);
 }
 
 /* ------------------ */
@@ -104,7 +109,12 @@ nav {
   margin-top: 2px;
   padding: 2rem;
 }
-
+.container {
+  /* background-color: darkgrey; */
+  width: 70%;
+  padding: 2rem;
+  margin-top: 2px;
+}
 /* .content {
   background-color: coral;
 } */
