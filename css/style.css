@@ -1,5 +1,5 @@
 /* GENERAL */
-#app {
+#root {
   background-color: rgba(255, 253, 139, 0.801);
   width: 100vw;
   padding: 20px;
@@ -21,7 +21,7 @@
 header.container-fluid,
 footer.container-fluid {
   background-color: blue;
-  height: 50px;
+
   width: 100%;
 }
 
