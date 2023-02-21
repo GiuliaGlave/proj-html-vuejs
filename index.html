@@ -118,7 +118,7 @@
 
       <main>
         <!-- JUMBOTRON -->
-        <section
+        <!--  <section
           class="container-fluid d-flex justify-content-center align-items-center"
           id="jumbotron"
         >
@@ -130,15 +130,15 @@
               <button class="m-2">OUR HISTORY</button>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- SECTION 1 -->
-        <section
+        <!--    <section
           class="container-fluid d-flex justify-content-center align-items-center flex-column"
         >
           <div class="content">
-            <div class="row d-flex align-items-center g-4">
-              <!-- testo -->
-              <div class="col col-6">
+            <div class="row d-flex align-items-center g-4"> -->
+        <!-- testo -->
+        <!-- <div class="col col-6">
                 <div class="border">
                   Look what consumer power has done with organic food; we can do
                   the same with clothes.
@@ -161,9 +161,9 @@
                     assumenda ea.
                   </p>
                 </div>
-              </div>
-              <!-- immagini -->
-              <div class="col col-3">
+              </div> -->
+        <!-- immagini -->
+        <!-- <div class="col col-3">
                 <div class="border">
                   <img
                     src="./imgs/assets/fe1.jpg"
@@ -194,10 +194,10 @@
                     alt=""
                   />
                 </div>
-              </div>
+              </div> -->
 
-              <!-- bollino -->
-              <div class="seal">
+        <!-- bollino -->
+        <!--   <div class="seal">
                 <img
                   src="./imgs/assets/fe-shap1-1.png"
                   alt=""
@@ -205,21 +205,21 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- ALL PRODUCTS -->
-        <section
+        <!--  <section
           class="container d-flex justify-content-center align-items-center"
         >
           <div class="content text-center p-2">
             <span>Trending Online Store</span>
-            <h1>GOGRIN ALL ORGANIC FOOD</h1>
-            <!-- menu shop -->
-            <div class="menu">
+            <h1>GOGRIN ALL ORGANIC FOOD</h1> -->
+        <!-- menu shop -->
+        <!--  <div class="menu">
               <span>All Product</span><span>Apple</span><span>Food</span
               ><span>Orange</span><span>Vegetable</span>
-            </div>
-            <!-- img product -->
-            <div class="row d-flex align-items-center g-4 m-2">
+            </div> -->
+        <!-- img product -->
+        <!--  <div class="row d-flex align-items-center g-4 m-2">
               <div class="col col-3">
                 <div class="border">
                   <img
@@ -303,14 +303,14 @@
             </div>
             <button>ALL PRODUCTS</button>
           </div>
-        </section>
+        </section> -->
         <!-- SHOP -->
-        <section
+        <!-- <section
           class="container-fluid d-flex justify-content-center align-items-center"
         >
-          <div class="content w-50 text-center p-2">
-            <!-- manager message -->
-            <div>
+          <div class="content w-50 text-center p-2"> -->
+        <!-- manager message -->
+        <!--  <div>
               <img
                 src="./imgs/assets/testi-icon.png"
                 alt=""
@@ -324,9 +324,9 @@
               </p>
               <span>Martha Alex</span>
               <span>Manager</span>
-            </div>
-            <!-- sales -->
-            <div class="row d-flex align-items-center g-4 m-2">
+            </div> -->
+        <!-- sales -->
+        <!-- <div class="row d-flex align-items-center g-4 m-2">
               <div class="col col-6">
                 <div class="border">
                   <div>Fresh garden tomato combo offer...$37</div>
@@ -341,9 +341,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- COUNTER -->
-        <section
+        <!--   <section
           class="container d-flex justify-content-center align-items-center"
         >
           <div class="content text-center p-2">
@@ -397,9 +397,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- TOP TRENDING -->
-        <section
+        <!--   <section
           class="container-fluid d-flex justify-content-center align-items-center"
         >
           <div class="content text-center p-2">
@@ -451,9 +451,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- CONTACT US -->
-        <section
+          <section
           class="container d-flex justify-content-center align-items-center"
         >
           <div class="content text-center p-2">
@@ -473,18 +473,18 @@
               <button class="m-2">APOINMENT</button>
             </div>
           </div>
-        </section>
+        </section> 
         <!-- NEWS FEED -->
-        <section
+        <!-- <section
           class="container-fluid d-flex justify-content-center align-items-center"
         >
           <div class="content text-center p-2">
             <div>
               <span>The news what we have</span>
               <h1>GOGRIN LATEST NEWS FEED</h1>
-            </div>
-            <!-- news post -->
-            <div class="row d-flex align-items-center g-4 m-2">
+            </div> -->
+        <!-- news post -->
+        <!--   <div class="row d-flex align-items-center g-4 m-2">
               <div class="col col-4">
                 <div class="border">
                   <img
@@ -556,9 +556,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- BRAND -->
-        <section
+        <!--   <section
           class="container-fluid d-flex justify-content-center align-items-center"
         >
           <div class="row d-flex align-items-center g-4 m-2">
@@ -595,9 +595,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <!-- FORM -->
-        <div
+        <!-- <div
           id="subscribe"
           class=""
         >
@@ -610,10 +610,50 @@
             <button>SEND</button>
           </div>
         </div>
-      </main>
+      </main> -->
 
       <!-- FOOTER -->
-      <footer class="container-fluid"></footer>
+      <footer class="container-fluid">
+        <!-- top footer -->
+       <div v-for="element in footerTop" class="bg-danger">
+          {{element.logo}} 
+          {{element.text}} 
+          {{}} 
+          
+        </div>
+
+       <div v-for="element in footerTop" class="bg-success">
+          {{}} 
+          {{}} 
+          
+        </div>
+
+       <hr>
+
+        <!-- bottom footer -->
+        <div v-for="link in footerBottom" class="d-flex justify-content-between">
+          <div>
+            {{link.copiright}} 
+          </div>
+          <div>
+            <ul>
+              <li>
+                {{link.service}}
+              </li>
+              <li>
+                 {{link.prices}}
+              </li>
+              <li>
+                {{link.contact}}
+              </li>
+            </ul>
+            
+         
+          
+          </div>
+          
+        </div>
+      </footer>
     </div>
   </body>
 </html>
