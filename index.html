@@ -52,26 +52,68 @@
       <!-- HEADER -->
       <header class="container-fluid">
         <!-- top header -->
-        <div v-for="info in headerTop">
-          {{info.location}} //// {{info.email}} //// {{info.businessHours}} ////
-          <div v-for="account in headerTop[0].socialAccounts">
-            {{account.facebookAccount}}---{{account.twitterAccount}}---
-            {{account.instagramAccount}}---{{account.pinterestAccount}}
+
+        <div
+          v-for="info in headerTop"
+          class="d-flex justify-content-between"
+        >
+          <!-- top header left -->
+          <div class="d-flex">
+            <div>{{info.location}}</div>
+            <div class="ms-4">{{info.email}}</div>
+          </div>
+          <!-- top header right -->
+          <div class="d-flex">
+            <div>{{info.businessHours}}</div>
+
+            <div v-for="account in headerTop[0].socialAccounts">
+              <ul>
+                <li>{{account.facebookAccount}}</li>
+                <li>{{account.twitterAccount}}</li>
+                <li>{{account.instagramAccount}}</li>
+                <li>{{account.pinterestAccount}}</li>
+              </ul>
+            </div>
           </div>
         </div>
+
         <hr />
-        <!-- bottom header -->
-        <div v-for="element in headerBottom">
-          {{element.logo}} ////
 
-          <div v-for="item in headerBottom[0].navbar">
-            {{item.home}}---{{item.about}}---
-            {{item.service}}---{{item.portfolio}}---
-            {{item.shop}}---{{item.blog}}--- {{item.contact}}
+        <!-- bottom header -->
+
+        <nav
+          v-for="element in headerBottom"
+          class="d-flex justify-content-between align-items-center"
+        >
+          <!-- logo + link -->
+          <div class="d-flex align-items-center">
+            <div>{{element.logo}}</div>
+
+            <div>
+              <ul
+                v-for="item in headerBottom[0].navbar"
+                class="d-flex"
+              >
+                <li>{{item.home}}</li>
+                <li>{{item.about}}</li>
+                <li>{{item.service}}</li>
+                <li>{{item.portfolio}}</li>
+                <li>{{item.shop}}</li>
+                <li>{{item.blog}}</li>
+                <li>{{item.contact}}</li>
+              </ul>
+            </div>
           </div>
 
-          {{element.search}} //// {{element.chart}}//// {{element.button}}
-        </div>
+          <!-- icons -->
+          <div>
+            <ul>
+              <li>{{element.search}}</li>
+              <li>{{element.chart}}</li>
+              <li>{{element.button}}</li>
+            </ul>
+          </div>
+        </nav>
       </header>
 
       <main>

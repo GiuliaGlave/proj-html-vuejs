@@ -45,3 +45,10 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+}
