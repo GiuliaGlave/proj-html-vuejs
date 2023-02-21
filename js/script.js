@@ -3,12 +3,12 @@ const app = Vue.createApp({
     return {
       headerTop: [
         {
-          location: "&hearts; luogo",
-          email: "email@mail.com",
-          businessHours: "8AM- 8PM",
+          location: "&hearts; North baukhula, tala, USA",
+          email: "&hearts; demo@example.com",
+          businessHours: "&hearts; 8.30AM-8.30PM",
           socialAccounts: [
             {
-              facebookAccount: "fb-logo",
+              facebookAccount: "fa-brands fa-facebook-f",
               twitterAccount: "tw-logo",
               instagramAccount: "ig-logo",
               pinterestAccount: "pts-logo",
@@ -19,20 +19,20 @@ const app = Vue.createApp({
 
       headerBottom: [
         {
-          logo: "img-logo",
+          logo: "logo.png",
           navbar: [
             {
-              home: "link-home",
-              about: "link-about",
-              service: "link-service",
-              portfolio: "link-portfolio",
-              shop: "link-shop",
-              blog: "link-blog",
-              contact: "link-contact",
+              home: "HOME" + "&hearts;",
+              about: "ABOUT" + "&hearts;",
+              service: "SERVICE" + "&hearts;",
+              portfolio: "PORTFOLIO" + "&hearts;",
+              shop: "SHOP" + "&hearts;",
+              blog: "BLOG" + "&hearts;",
+              contact: "CONTACT" + "&hearts;",
             },
           ],
-          search: "search-icon",
-          chart: "chart-icon",
+          search: "hearts;",
+          cart: "hearts;",
           button: "ORDER NOW",
         },
       ],
@@ -106,7 +106,7 @@ const app = Vue.createApp({
 
       footerBottom: [
         {
-          copiright: "Copiright (copy) gogrin all rights reserved.",
+          copiright: "Copiright&copy; gogrin all rights reserved.",
           service: "Service",
           prices: "Pricing Table",
           contact: "Contact",

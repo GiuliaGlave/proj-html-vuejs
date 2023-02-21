@@ -22,6 +22,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- STYLE CSS -->
     <link
@@ -47,20 +49,23 @@
     ></script>
   </head>
 
-  <body>
-    <div id="app">
+  <body >
+    <div id="app" >
       <!-- HEADER -->
-      <header class="container-fluid">
+      <header class="container-fluid p-0 m-0">
         <!-- top header -->
 
         <div
           v-for="info in headerTop"
-          class="d-flex justify-content-between"
+          class="top-header d-flex justify-content-between p-3"
         >
           <!-- top header left -->
           <div class="d-flex">
-            <div>{{info.location}}</div>
+            <div>
+              <span v-html="info.location"></span>
+            </div>
             <div class="ms-4">{{info.email}}</div>
+            
           </div>
           <!-- top header right -->
           <div class="d-flex">
@@ -68,7 +73,12 @@
 
             <div v-for="account in headerTop[0].socialAccounts">
               <ul>
-                <li>{{account.facebookAccount}}</li>
+                <li><a href="#" v-for="account IN socialAccounts">
+                  
+                  <i
+                  v-bind:class="socialAccounts.facebookAccount"></i></a>
+                  
+                  {{account.facebookAccount}}</li>
                 <li>{{account.twitterAccount}}</li>
                 <li>{{account.instagramAccount}}</li>
                 <li>{{account.pinterestAccount}}</li>
@@ -76,18 +86,19 @@
             </div>
           </div>
         </div>
-
-        <hr />
-
+       
         <!-- bottom header -->
 
         <nav
           v-for="element in headerBottom"
-          class="d-flex justify-content-between align-items-center"
+          class="d-flex justify-content-between align-items-center p-3"
         >
           <!-- logo + link -->
           <div class="d-flex align-items-center">
-            <div>{{element.logo}}</div>
+            <!-- logo -->
+            <div>
+              <img :src="'./imgs/assets/'+ element.logo+'.png'" alt=""></div>
+            <img src="./imgs/assets/logo.png" alt="">
 
             <div>
               <ul
@@ -109,8 +120,8 @@
           <div>
             <ul>
               <li>{{element.search}}</li>
-              <li>{{element.chart}}</li>
-              <li>{{element.button}}</li>
+              <li>{{element.cart}}</li>
+              <li><button class="btn btn-primary">{{element.button}}</button></li>
             </ul>
           </div>
         </nav>
@@ -632,8 +643,8 @@
 
         <!-- bottom footer -->
         <div v-for="link in footerBottom" class="d-flex justify-content-between">
-          <div>
-            {{link.copiright}} 
+          <div><span v-html="link.copiright"></span>
+            
           </div>
           <div>
             <ul>

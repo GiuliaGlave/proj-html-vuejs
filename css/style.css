@@ -1,8 +1,58 @@
 /* GENERAL */
+:root {
+  /* # BACKGROUNDS */
+  --green-bg: #007166;
+  --orange-bg: #ef9e03;
+  --jumbotron-bg: url(../imgs/assets/H3-slider3.jpg);
+  --shop-bg: url(../imgs/assets/shop-bg-img.jpg);
+  --banner-bg: url(../imgs/assets/counter-bg.jpg);
+  --title-bg: url(../imgs/assets/title-shap.png);
+  --call-to-action-bg: url(../imgs/assets/call-to-bg.jpg);
+  --footer-top-bg: url(../imgs/assets/footer-bg.jpg);
+
+  /* TEXT */
+  --green-text: #007166;
+  --orange-text: #ef9e03;
+  --white-text: #ffffff;
+  --light-text: #888888;
+  --dark-text: #333333;
+}
+
 #root {
   background-color: rgba(255, 253, 139, 0.801);
   width: 100vw;
   padding: 20px;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background-color: var(--orange-bg);
+  color: var(--white-text);
+  border: none;
+  border-radius: 0 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-secondary {
+  background-color: var(--green-bg);
+  color: var(--white-text);
+  border: none;
+  border-radius: 0 1rem;
+  padding: 0.5rem 1rem;
+}
+
+header.container-fluid,
+footer.container-fluid {
+  background-color: blue;
+}
+
+/* HEADER */
+.top-header {
+  background-color: var(--green-bg);
+  color: var(--white-text);
+}
+nav {
+  background-color: white;
 }
 
 .container {
@@ -18,19 +68,8 @@
   padding: 2rem;
 }
 
-header.container-fluid,
-footer.container-fluid {
-  background-color: blue;
-
-  width: 100%;
-}
-
 .content {
   background-color: coral;
-}
-
-button {
-  background-color: red;
 }
 
 .col {
