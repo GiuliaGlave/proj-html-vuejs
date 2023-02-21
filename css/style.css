@@ -18,16 +18,28 @@
   --dark-text: #333333;
 }
 
+body {
+  margin: auto;
+  font-family: "roboto", sans-serif;
+}
+
 #root {
   background-color: rgba(255, 253, 139, 0.801);
   width: 100vw;
   padding: 20px;
 }
 
+/* TEXT */
+.text-title {
+  color: var(--white-text);
+  font-size: 3rem;
+}
+
 /* BUTTONS */
 .btn-primary {
   background-color: var(--orange-bg);
   color: var(--white-text);
+  font-size: smaller;
   border: none;
   border-radius: 0 1rem;
   padding: 0.5rem 1rem;
@@ -36,6 +48,7 @@
 .btn-secondary {
   background-color: var(--green-bg);
   color: var(--white-text);
+  font-size: smaller;
   border: none;
   border-radius: 0 1rem;
   padding: 0.5rem 1rem;
@@ -50,11 +63,21 @@ footer.container-fluid {
 .top-header {
   background-color: var(--green-bg);
   color: var(--white-text);
+  width: 100%;
 }
 nav {
   background-color: white;
+  width: 100%d;
 }
 
+/* JUMBOTRON */
+#jumbotron {
+  background-image: var(--jumbotron-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 45rem;
+}
 .container {
   background-color: darkgrey;
   padding: 2rem;
@@ -72,13 +95,13 @@ nav {
   background-color: coral;
 }
 
-.col {
+/* .col {
   background-color: pink;
   padding: 1rem;
 }
 .row {
   background-color: fuchsia;
-}
+} */
 
 img {
   width: 100%;
