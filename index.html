@@ -152,26 +152,40 @@
         </section>
         <!-- SECTION 1 -->
            <section
-          class="container-fluid d-flex justify-content-center align-items-center flex-column"
+          class=" d-flex position-relative justify-content-center align-items-center flex-column"
+
+
         >
-          <div class="content">
-            <div class="row d-flex align-items-center g-4">
+      
+        <div class="container ">
+
+            <!-- bollino -->
+          <div class="seal">
+                <img
+                  src="./imgs/assets/fe-shap1-1.png"
+                  alt=""
+                />
+          </div>
+            <div class="row d-flex align-items-start g-4 pb-2 m-0 ">
+              
         <!-- testo -->
-        <div class="col col-6">
-                <div class="border">
-                  Look what consumer power has done with organic food; we can do
+              <div class="col col-6 p-0 m-0 ">
+                <div class=" fs-1 fw-bold" style="color: var(--green-text);">
+                  <span style="color: var(--orange-text);">Look what </span>consumer power has done with
+                  <span style="color: var(--orange-text);">organic food;</span>
+                  we can do
                   the same with clothes.
                 </div>
               </div>
-              <div class="col col-6">
-                <div class="border">
+              <div class="col col-6 p-0 m-0">
+                <div class="" style="color: var(--light-text);">
                   <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Mollitia fugit, natus minima ut similique corporis sequi
                     tempore praesentium a hic molestias consequatur unde dolor.
                     Voluptatem obcaecati molestiae libero accusamus totam
-                    repellendus modi reprehenderit atque at. Dolores beatae
-                    consequuntur repudiandae distinctio!Paul Rogers
+                    repellendus modi reprehenderit atque at. <span style="color: var(--orange-text);">Dolores beatae
+                    consequuntur repudiandae distinctio.</span> 
                   </p>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -181,11 +195,14 @@
                   </p>
                 </div>
               </div>
+              
+            </div>
         <!-- immagini -->
+        <div class="row p-3">
         <div class="col col-3">
                 <div class="border">
                   <img
-                    src="./imgs/assets/fe1.jpg"
+                    src="./imgs/assets/fe3.jpg"
                     alt=""
                   />
                 </div>
@@ -201,7 +218,7 @@
               <div class="col col-3">
                 <div class="border">
                   <img
-                    src="./imgs/assets/fe1.jpg"
+                    src="./imgs/assets/fe2.jpg"
                     alt=""
                   />
                 </div>
@@ -214,17 +231,13 @@
                   />
                 </div>
               </div> 
-
-        <!-- bollino -->
-        <!--   <div class="seal">
-                <img
-                  src="./imgs/assets/fe-shap1-1.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </section> -->
+        </div>
+        </div>
+          
+      
+          
+         
+        </section>
         <!-- ALL PRODUCTS -->
         <!--  <section
           class="container d-flex justify-content-center align-items-center"
@@ -472,7 +485,7 @@
           </div>
         </section> -->
         <!-- CONTACT US -->
-          <section
+        <!--   <section
           class="container d-flex justify-content-center align-items-center"
         >
           <div class="content text-center p-2">
@@ -492,7 +505,7 @@
               <button class="m-2">APOINMENT</button>
             </div>
           </div>
-        </section> 
+        </section>  -->
         <!-- NEWS FEED -->
         <!-- <section
           class="container-fluid d-flex justify-content-center align-items-center"
@@ -632,9 +645,9 @@
       </main> -->
 
       <!-- FOOTER -->
-      <footer class="container-fluid">
+     <!--  <footer class="container-fluid"> -->
         <!-- top footer -->
-       <div v-for="element in footerTop" class="bg-danger">
+    <!--    <div v-for="element in footerTop" class="bg-danger">
           {{element.logo}} 
           {{element.text}} 
           {{}} 
@@ -647,10 +660,10 @@
           
         </div>
 
-       <hr>
+       <hr> -->
 
         <!-- bottom footer -->
-        <div v-for="link in footerBottom" class="d-flex justify-content-between">
+       <!--  <div v-for="link in footerBottom" class="d-flex justify-content-between">
           <div><span v-html="link.copiright"></span>
             
           </div>
@@ -672,7 +685,7 @@
           </div>
           
         </div>
-      </footer>
+      </footer> -->
     </div>
   </body>
 </html>

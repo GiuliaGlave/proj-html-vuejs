@@ -24,7 +24,7 @@ body {
 }
 
 #root {
-  background-color: rgba(255, 253, 139, 0.801);
+  background-color: #fff;
   width: 100vw;
   padding: 20px;
 }
@@ -32,7 +32,11 @@ body {
 /* TEXT */
 .text-title {
   color: var(--white-text);
-  font-size: 3rem;
+  font-size: 2rem;
+}
+.text-title-section {
+  color: var(--white-text);
+  font-size: 1rem;
 }
 
 /* BUTTONS */
@@ -79,21 +83,31 @@ nav {
   height: 45rem;
 }
 .container {
-  background-color: darkgrey;
+  /* background-color: darkgrey; */
+  width: 70%;
   padding: 2rem;
   margin-top: 2px;
 }
+
+/* SECTION 1 */
+
+.seal {
+  position: absolute;
+  left: 80rem;
+}
+
+/* ------------------ */
 
 .container-fluid {
-  background-color: darkorchid;
+  /*   background-color: darkorchid; */
 
   margin-top: 2px;
   padding: 2rem;
 }
 
-.content {
+/* .content {
   background-color: coral;
-}
+} */
 
 /* .col {
   background-color: pink;
