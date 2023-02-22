@@ -45,6 +45,7 @@ body {
 
 small {
   font-weight: 100;
+  color: var(--dark-text);
 }
 .small-orange {
   color: var(--orange-text);
@@ -70,6 +71,14 @@ small {
   padding: 0.5rem 1rem;
 }
 
+.btn-secondary-n {
+  background-color: var(--green-bg);
+  color: var(--white-text);
+  font-size: smaller;
+  border: none;
+  height: 100%;
+  padding: 0.5rem 3rem;
+}
 header.container-fluid,
 footer.container-fluid {
   background-color: blue;
@@ -124,14 +133,15 @@ nav {
 }
 
 /* COUNTER */
-.counter {
+.counter,
+#subscribe {
   background-image: var(--banner-bg);
 }
 
 /* TOP TRENDING */
 .bg-title {
   background-image: var(--title-bg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -144,11 +154,27 @@ nav {
   background-repeat: no-repeat;
 }
 
+/* FORM */
+#subscribe {
+  position: absolute;
+  left: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 25rem;
+  height: 100%;
+  padding-left: 2rem;
+}
+
 /* FOOTER */
 .footer-top {
   background-image: var(--footer-top-bg);
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 9rem;
+  padding-bottom: 5rem;
 }
 
 /* ------------------ */
