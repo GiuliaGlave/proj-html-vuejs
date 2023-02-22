@@ -83,21 +83,46 @@
         >
           <!-- top header left -->
           <div class="d-flex">
-            <div>
-              <span v-html="info.location"></span>
+            <div class="ms-4">
+              <i :class="info.iconLoc"> </i><span>{{' ' +info.location}}</span>
             </div>
-            <div class="ms-4">{{info.email}}</div>
+            <div class="ms-4">
+              <i :class="info.iconMail"> </i><span>{{' ' +info.email}}</span>
+            </div>
           </div>
           <!-- top header right -->
           <div class="d-flex">
-            <div>{{info.businessHours}}</div>
+            <div class="ms-4">
+              <i :class="info.iconClock"> </i
+              ><span>{{' ' +info.businessHours}}</span>
+            </div>
 
-            <div v-for="account in headerTop[0].socialAccounts">
-              <ul>
-                <li>{{account.facebookAccount}}</li>
-                <li>{{account.twitterAccount}}</li>
-                <li>{{account.instagramAccount}}</li>
-                <li>{{account.pinterestAccount}}</li>
+            <div v-for="icon in headerTop[0].socialAccounts">
+              <ul class="d-flex">
+                <li>
+                  <i
+                    :class="icon.facebookAccount"
+                    class="p-2"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    :class="icon.twitterAccount"
+                    class="p-2"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    :class="icon.instagramAccount"
+                    class="p-2"
+                  ></i>
+                </li>
+                <li>
+                  <i
+                    :class="icon.pinterestAccount"
+                    class="p-2"
+                  ></i>
+                </li>
               </ul>
             </div>
           </div>
@@ -125,12 +150,42 @@
                 v-for="item in headerBottom[0].navbar"
                 class="d-flex"
               >
-                <li>{{item.home}}</li>
-                <li>{{item.about}}</li>
+                <li>
+                  {{item.home }}<i
+                    :class="item.chevronDown"
+                    class="ps-2"
+                    style="color: var(--light-text)"
+                  ></i>
+                </li>
+                <li>
+                  {{item.about}}<i
+                    :class="item.chevronDown"
+                    class="ps-2"
+                    style="color: var(--light-text)"
+                  ></i>
+                </li>
                 <li>{{item.service}}</li>
-                <li>{{item.portfolio}}</li>
-                <li>{{item.shop}}</li>
-                <li>{{item.blog}}</li>
+                <li>
+                  {{item.portfolio}}<i
+                    :class="item.chevronDown"
+                    class="ps-2"
+                    style="color: var(--light-text)"
+                  ></i>
+                </li>
+                <li>
+                  {{item.shop}}<i
+                    :class="item.chevronDown"
+                    class="ps-2"
+                    style="color: var(--light-text)"
+                  ></i>
+                </li>
+                <li>
+                  {{item.blog}}<i
+                    :class="item.chevronDown"
+                    class="ps-2"
+                    style="color: var(--light-text)"
+                  ></i>
+                </li>
                 <li>{{item.contact}}</li>
               </ul>
             </div>
@@ -139,8 +194,22 @@
           <!-- icons -->
           <div>
             <ul>
-              <li>{{element.search}}</li>
-              <li>{{element.cart}}</li>
+              <li
+                class="rounded-circle d-flex align-items-center p-2"
+                style="
+                  background-color: var(--orange-bg);
+                  color: var(--white-text);
+                "
+              >
+                <i :class="headerBottom[0].search"> </i>
+              </li>
+              <li
+                class="rounded-circle d-flex align-items-center p-2"
+                style="color: var(--green-text)"
+              >
+                <i :class="headerBottom[0].cart"> </i>
+              </li>
+
               <li>
                 <button class="btn btn-primary">{{element.button}}</button>
               </li>
