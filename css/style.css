@@ -125,6 +125,14 @@ nav {
   background-image: var(--banner-bg);
 }
 
+/* FOOTER */
+.footer-top {
+  background-image: var(--footer-top-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* ------------------ */
 
 .container-fluid {

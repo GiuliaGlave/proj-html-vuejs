@@ -9,7 +9,7 @@ const app = Vue.createApp({
           socialAccounts: [
             {
               facebookAccount: "fa-brands fa-facebook-f",
-              twitterAccount: "tw-logo",
+              twitterAccount: "fa-brands fa-twitter",
               instagramAccount: "ig-logo",
               pinterestAccount: "pts-logo",
             },
@@ -19,7 +19,7 @@ const app = Vue.createApp({
 
       headerBottom: [
         {
-          logo: "logo.png",
+          logo: "logo",
           navbar: [
             {
               home: "HOME" + "&hearts;",
@@ -38,20 +38,20 @@ const app = Vue.createApp({
       ],
 
       footerTop: [
-        //logo + icons
+        //logo + icons [0]
         {
-          logo: "img-logo",
-          text: "War should never be entered",
+          logo: "footer-logo",
+          text: "War should never beshould entered entered  should never be entered never be entered",
           socialAccounts: [
             {
-              facebookAccount: "fb-logo",
-              googleAccount: "g+-logo",
-              instagramAccount: "ig-logo",
-              pinterestAccount: "pts-logo",
+              facebookAccount: "fa-brands fa-facebook-f",
+              googleAccount: "fa-brands fa-google-plus-g",
+              twitterAccount: "fa-brands fa-twitter",
+              pinterestAccount: "fa-brands fa-pinterest",
             },
           ],
         },
-        //emergency links
+        //emergency links [1]
         {
           emergencyLinks: [
             {
@@ -64,40 +64,35 @@ const app = Vue.createApp({
             },
           ],
         },
-        //latest blog
+        //latest blog [2]
         {
           blog: [
             {
               blogTitle: "Our Latest Blog.",
               postPreview: [
-                {
-                  postImg: "img-blog-1",
-                  postText: "text-blog-1",
-                  postDate: "date-blog-1",
-                },
-                {
-                  postImg: "img-blog-2",
-                  postText: "text-blog-2",
-                  postDate: "date-blog-2",
-                },
+                "blo1-300x300", //0
+                " Where I live, I am sourrounded by fresh, organic food, so I eat really well.", //1
+                "December 17, 2022", //2
+
+                "blo2-300x300", //3
+                "What we get at home  is 100% organic food. We are also 90% vegetarian.", //4
+                "December 16, 2022", //5
               ],
             },
           ],
         },
-        //galley
+        //galley [3]
         {
           gallery: [
             {
               galleryTitle: "Our Gallery",
               imgPreview: [
-                {
-                  galleryImg: "img-gallery-1",
-                  galleryImg: "img-gallery-2",
-                  galleryImg: "img-gallery-3",
-                  galleryImg: "img-gallery-4",
-                  galleryImg: "img-gallery-5",
-                  galleryImg: "img-gallery-6",
-                },
+                "blo1-300x300",
+                "blo9-300x300",
+                "blo8-300x300",
+                "blo7-300x300",
+                "blo4-300x300",
+                "blo3-300x300",
               ],
             },
           ],
@@ -118,4 +113,4 @@ const app = Vue.createApp({
   methods: {},
 });
 
-app.mount("#app");
+app.mount("#root");

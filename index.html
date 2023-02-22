@@ -108,6 +108,7 @@
         <nav
           v-for="element in headerBottom"
           class="d-flex justify-content-between align-items-center p-3"
+          style="color: var(--dark-text)"
         >
           <!-- logo + link -->
           <div class="d-flex align-items-center">
@@ -118,10 +119,6 @@
                 alt=""
               />
             </div>
-            <img
-              src="./imgs/assets/logo.png"
-              alt=""
-            />
 
             <div>
               <ul
@@ -556,7 +553,7 @@
           </div>
         </section>
         <!-- TOP TRENDING -->
-        <!--   <section
+        <section
           class="container-fluid d-flex justify-content-center align-items-center"
         >
           <div class="content text-center p-2">
@@ -608,9 +605,10 @@
               </div>
             </div>
           </div>
-        </section> -->
+        </section>
+
         <!-- CONTACT US -->
-        <!--   <section
+        <section
           class="container d-flex justify-content-center align-items-center"
         >
           <div class="content text-center p-2">
@@ -630,7 +628,7 @@
               <button class="m-2">APOINMENT</button>
             </div>
           </div>
-        </section>  -->
+        </section>
         <!-- NEWS FEED -->
         <!-- <section
           class="container-fluid d-flex justify-content-center align-items-center"
@@ -770,47 +768,168 @@
       </main>
 
       <!-- FOOTER -->
-      <!--  <footer class="container-fluid"> -->
-      <!-- top footer -->
-      <!--    <div v-for="element in footerTop" class="bg-danger">
-          {{element.logo}} 
-          {{element.text}} 
-          {{}} 
-          
-        </div>
+      <footer class="container-fluid m-0 p-0">
+        <!-- top footer -->
+        <div class="footer-top row d-flex p-5">
+          <!-- col 1 -->
+          <div class="col col-3">
+            <img
+              :src="'./imgs/assets/'+ footerTop[0].logo+'.png'"
+              alt=""
+            />
+            <p>{{footerTop[0].text}}</p>
 
-       <div v-for="element in footerTop" class="bg-success">
-          {{}} 
-          {{}} 
-          
-        </div>
-
-       <hr> -->
-
-      <!-- bottom footer -->
-      <!--  <div v-for="link in footerBottom" class="d-flex justify-content-between">
-          <div><span v-html="link.copiright"></span>
-            
+            <div v-for="icon in footerTop[0].socialAccounts">
+              <ul class="d-flex">
+                <li
+                  class="rounded"
+                  style="background-color: var(--green-bg)"
+                >
+                  <i
+                    :class="icon.facebookAccount"
+                    class="p-2"
+                  ></i>
+                </li>
+                <li
+                  class="rounded"
+                  style="background-color: var(--green-bg)"
+                >
+                  <i
+                    :class="icon.googleAccount"
+                    class="p-2"
+                  ></i>
+                </li>
+                <li
+                  class="rounded"
+                  style="background-color: var(--green-bg)"
+                >
+                  <i
+                    :class="icon.twitterAccount"
+                    class="p-2"
+                  ></i>
+                </li>
+                <li
+                  class="rounded"
+                  style="background-color: var(--green-bg)"
+                >
+                  <i
+                    :class="icon.pinterestAccount"
+                    class="p-2"
+                  ></i>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div>
+
+          <!-- col 2  -->
+          <div class="col col-2">
+            <div v-for="(link, i) in footerTop[1].emergencyLinks">
+              <h2>{{link.linkTitle}}</h2>
+              <ul class="d-flex flex-column p-0 mt-5">
+                <li>{{link.linkShop}}</li>
+                <li>{{link.linkTerms}}</li>
+                <li>{{link.linkFaq}}</li>
+                <li>{{link.linkTeam}}</li>
+                <li>{{link.linkNews}}</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- col 3  -->
+          <div class="col col-4">
+            <div v-for="item in footerTop[2].blog">
+              <h2>{{item.blogTitle}}</h2>
+              <ul class="d-flex flex-column flex-wrap p-0 mt-5">
+                <li class="d-flex justify-content-center">
+                  <img
+                    :src="'./imgs/assets/' +  item.postPreview[0] +'.jpg'"
+                    alt=""
+                    class="w-25 pe-3"
+                  />
+                  <div>
+                    <p>{{item.postPreview[1]}}</p>
+                    <p>{{item.postPreview[2]}}</p>
+                  </div>
+                </li>
+                <li class="d-flex justify-content-center">
+                  <img
+                    :src="'./imgs/assets/' +  item.postPreview[3] +'.jpg'"
+                    alt=""
+                    class="w-25 pe-3"
+                  />
+                  <div>
+                    <p>{{item.postPreview[4]}}</p>
+                    <p>{{item.postPreview[5]}}</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- col 4  -->
+          <div class="col col-3">
+            <div v-for="(item, index) in footerTop[3].gallery">
+              <h2>{{item.galleryTitle}}</h2>
+              <ul class="d-flex flex-wrap p-0 mt-5">
+                <li class="w-25">
+                  <img
+                    :src="'./imgs/assets/' +  item.imgPreview[0] +'.jpg'"
+                    alt=""
+                  />
+                </li>
+                <li class="w-25">
+                  <img
+                    :src="'./imgs/assets/' +  item.imgPreview[1] +'.jpg'"
+                    alt=""
+                  />
+                </li>
+                <li class="w-25">
+                  <img
+                    :src="'./imgs/assets/' +  item.imgPreview[2] +'.jpg'"
+                    alt=""
+                  />
+                </li>
+                <li class="w-25">
+                  <img
+                    :src="'./imgs/assets/' +  item.imgPreview[3] +'.jpg'"
+                    alt=""
+                  />
+                </li>
+                <li class="w-25">
+                  <img
+                    :src="'./imgs/assets/' +  item.imgPreview[4] +'.jpg'"
+                    alt=""
+                  />
+                </li>
+                <li class="w-25">
+                  <img
+                    :src="'./imgs/assets/' +  item.imgPreview[5] +'.jpg'"
+                    alt=""
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom footer -->
+        <div
+          v-for="link in footerBottom"
+          class="row d-flex justify-content-between p-4"
+          style="background-color: var(--green-bg)"
+        >
+          <div class="col col-auto">
+            <span v-html="link.copiright"></span>
+          </div>
+
+          <div class="col col-auto">
             <ul>
-              <li>
-                {{link.service}}
-              </li>
-              <li>
-                 {{link.prices}}
-              </li>
-              <li>
-                {{link.contact}}
-              </li>
+              <li>{{link.service}}</li>
+              <li>{{link.prices}}</li>
+              <li>{{link.contact}}</li>
             </ul>
-            
-         
-          
           </div>
-          
         </div>
-      </footer> -->
+      </footer>
     </div>
   </body>
 </html>
