@@ -35,7 +35,7 @@ body {
 /* TEXT */
 .text-title {
   color: var(--white-text);
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .text-title-section {
   color: var(--orange-text);
@@ -120,6 +120,11 @@ nav {
   height: 15rem;
 }
 
+/* COUNTER */
+.counter {
+  background-image: var(--banner-bg);
+}
+
 /* ------------------ */
 
 .container-fluid {
@@ -134,6 +139,7 @@ nav {
   padding: 2rem;
   margin-top: 2px;
 }
+
 /* .content {
   background-color: coral;
 }
