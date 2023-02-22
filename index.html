@@ -97,31 +97,39 @@
               ><span>{{' ' +info.businessHours}}</span>
             </div>
 
-            <div v-for="icon in headerTop[0].socialAccounts" >
+            <div v-for="icon in headerTop[0].socialAccounts">
               <ul class="d-flex">
-                <li><a href="#">
-                  <i
-                    :class="icon.facebookAccount"
-                    class="p-2  header-icon rounded"
-                  ></i></a>
+                <li>
+                  <a href="#">
+                    <i
+                      :class="icon.facebookAccount"
+                      class="p-2 header-icon rounded"
+                    ></i
+                  ></a>
                 </li>
-                <li><a href="#">
-                  <i
-                    :class="icon.twitterAccount"
-                    class="p-2 header-icon rounded"
-                  ></i></a>
+                <li>
+                  <a href="#">
+                    <i
+                      :class="icon.twitterAccount"
+                      class="p-2 header-icon rounded"
+                    ></i
+                  ></a>
                 </li>
-                <li><a href="#"><i
-                    :class="icon.instagramAccount"
-                    class="p-2 header-icon rounded"
-                  ></i></a>
-                  
+                <li>
+                  <a href="#"
+                    ><i
+                      :class="icon.instagramAccount"
+                      class="p-2 header-icon rounded"
+                    ></i
+                  ></a>
                 </li>
-                <li><a href="#"><i
-                    :class="icon.pinterestAccount"
-                    class="p-2 header-icon rounded"
-                  ></i></a>
-                  
+                <li>
+                  <a href="#"
+                    ><i
+                      :class="icon.pinterestAccount"
+                      class="p-2 header-icon rounded"
+                    ></i
+                  ></a>
                 </li>
               </ul>
             </div>
@@ -150,42 +158,51 @@
                 v-for="item in headerBottom[0].navbar"
                 class="d-flex"
               >
-                <li><a href="#"> {{item.home }}<i
-                    :class="item.chevronDown"
-                    class="ps-2"
-                    style="color: var(--light-text)"
-                  ></i></a>
-                 
+                <li>
+                  <a href="#">
+                    {{item.home }}<i
+                      :class="item.chevronDown"
+                      class="ps-2"
+                      style="color: var(--light-text)"
+                    ></i
+                  ></a>
                 </li>
-                <li><a href="#">{{item.about}}<i
-                    :class="item.chevronDown"
-                    class="ps-2"
-                    style="color: var(--light-text)"
-                  ></i></a>
-                  
+                <li>
+                  <a href="#"
+                    >{{item.about}}<i
+                      :class="item.chevronDown"
+                      class="ps-2"
+                      style="color: var(--light-text)"
+                    ></i
+                  ></a>
                 </li>
-                <li><a href="#"> {{item.service}}</a>
-                 </li>
-                <li><a href="#">{{item.portfolio}}<i
-                    :class="item.chevronDown"
-                    class="ps-2"
-                    style="color: var(--light-text)"
-                  ></i></a>
-                  
+                <li><a href="#"> {{item.service}}</a></li>
+                <li>
+                  <a href="#"
+                    >{{item.portfolio}}<i
+                      :class="item.chevronDown"
+                      class="ps-2"
+                      style="color: var(--light-text)"
+                    ></i
+                  ></a>
                 </li>
-                <li><a href="#"> {{item.shop}}<i
-                    :class="item.chevronDown"
-                    class="ps-2"
-                    style="color: var(--light-text)"
-                  ></i></a>
-                 
+                <li>
+                  <a href="#">
+                    {{item.shop}}<i
+                      :class="item.chevronDown"
+                      class="ps-2"
+                      style="color: var(--light-text)"
+                    ></i
+                  ></a>
                 </li>
-                <li><a href="#">{{item.blog}}<i
-                    :class="item.chevronDown"
-                    class="ps-2"
-                    style="color: var(--light-text)"
-                  ></i></a>
-                  
+                <li>
+                  <a href="#"
+                    >{{item.blog}}<i
+                      :class="item.chevronDown"
+                      class="ps-2"
+                      style="color: var(--light-text)"
+                    ></i
+                  ></a>
                 </li>
                 <li><a href="#">{{item.contact}}</a></li>
               </ul>
@@ -201,14 +218,14 @@
                   background-color: var(--orange-bg);
                   color: var(--white-text);
                 "
-              ><a href="#"><i :class="headerBottom[0].search"> </i></a>
-                
+              >
+                <a href="#"><i :class="headerBottom[0].search"> </i></a>
               </li>
               <li
-                class=" d-flex align-items-center p-3"
+                class="d-flex align-items-center p-3"
                 style="color: var(--green-text)"
-              ><a href="#"><i :class="headerBottom[0].cart"> </i></a>
-                
+              >
+                <a href="#"><i :class="headerBottom[0].cart"> </i></a>
               </li>
 
               <li>
@@ -350,86 +367,99 @@
             <!-- img product -->
             <div class="row d-flex align-items-center g-4 m-2 fw-bold">
               <div class="col col-3">
-                <div class="d-flex flex-column">
-                  <div class="position-relative">
-                    <img
-                      src="./imgs/assets/s5.jpg"
-                      alt=""
-                      class="position-relative"
-                    />
+                <a href="#"
+                  ><div class="d-flex flex-column">
+                    <div class="position-relative">
+                      <img
+                        src="./imgs/assets/s5.jpg"
+                        alt=""
+                        class="position-relative"
+                      />
+                    </div>
                   </div>
-                </div>
 
-                <div class="py-2">Fresh Apple</div>
-                <div>
-                  <small class="small-orange">$18</small>
-                </div>
+                  <div class="py-2">Fresh Apple</div>
+                  <div>
+                    <small class="small-orange">$18</small>
+                  </div></a
+                >
               </div>
               <div class="col col-3">
-                <div class="d-flex flex-column">
-                  <div class="position-relative">
-                    <img
-                      src="./imgs/assets/s2.jpg"
-                      alt=""
-                      class="position-relative"
-                    />
-                    <span
-                      class="position-absolute top-0 end-0 m-2 p-1"
-                      style="
-                        background-color: var(--orange-bg);
-                        font-size: 0.7rem;
-                      "
-                      >SALE!</span
+                <a href="#"
+                  ><div class="d-flex flex-column">
+                    <div class="position-relative">
+                      <img
+                        src="./imgs/assets/s2.jpg"
+                        alt=""
+                        class="position-relative"
+                      />
+                      <span
+                        class="position-absolute top-0 end-0 m-2 p-1"
+                        style="
+                          background-color: var(--orange-bg);
+                          font-size: 0.7rem;
+                        "
+                        >SALE!</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="py-2">Fresh Cobles</div>
+                  <div>
+                    <small class="opacity-50 small-orange"
+                      ><del>$17</del></small
                     >
-                  </div>
-                </div>
-
-                <div class="py-2">Fresh Cobles</div>
-                <div>
-                  <small class="opacity-50 small-orange"><del>$17</del></small>
-                  <small class="small-orange">$18</small>
-                </div>
+                    <small class="small-orange">$18</small>
+                  </div></a
+                >
               </div>
               <div class="col col-3">
-                <div class="d-flex flex-column">
-                  <div class="position-relative">
-                    <img
-                      src="./imgs/assets/s8.jpg"
-                      alt=""
-                      class="position-relative"
-                    />
+                <a href="#">
+                  <div class="d-flex flex-column">
+                    <div class="position-relative">
+                      <img
+                        src="./imgs/assets/s8.jpg"
+                        alt=""
+                        class="position-relative"
+                      />
+                    </div>
                   </div>
-                </div>
 
-                <div class="py-2">Fresh Waterlemon</div>
-                <div>
-                  <small class="small-orange">$15</small>
-                </div>
+                  <div class="py-2">Fresh Waterlemon</div>
+                  <div>
+                    <small class="small-orange">$15</small>
+                  </div></a
+                >
               </div>
+
               <div class="col col-3">
-                <div class="d-flex flex-column">
-                  <div class="position-relative">
-                    <img
-                      src="./imgs/assets/s1.jpg"
-                      alt=""
-                      class="position-relative"
-                    />
-                    <span
-                      class="position-absolute top-0 end-0 m-2 p-1"
-                      style="
-                        background-color: var(--orange-bg);
-                        font-size: 0.7rem;
-                      "
-                      >SALE!</span
+                <a href="#"
+                  ><div class="d-flex flex-column">
+                    <div class="position-relative">
+                      <img
+                        src="./imgs/assets/s1.jpg"
+                        alt=""
+                        class="position-relative"
+                      />
+                      <span
+                        class="position-absolute top-0 end-0 m-2 p-1"
+                        style="
+                          background-color: var(--orange-bg);
+                          font-size: 0.7rem;
+                        "
+                        >SALE!</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="py-2">Organic Juice</div>
+                  <div>
+                    <small class="opacity-50 small-orange"
+                      ><del>$20</del></small
                     >
-                  </div>
-                </div>
-
-                <div class="py-2">Organic Juice</div>
-                <div>
-                  <small class="opacity-50 small-orange"><del>$20</del></small>
-                  <small class="small-orange">$15</small>
-                </div>
+                    <small class="small-orange">$15</small>
+                  </div></a
+                >
               </div>
               <div class="col col-3">
                 <div class="d-flex flex-column">
@@ -760,7 +790,9 @@
         >
           <div class="content d-flex flex-column align-items-center">
             <!-- title -->
-            <div class="text-title-section bg-title w-50 d-flex flex-column align-items-center">
+            <div
+              class="text-title-section bg-title w-50 d-flex flex-column align-items-center"
+            >
               <span>The news what we have</span>
               <h2>
                 <span style="color: var(--green-text)">GOGRIN LATEST </span>NEWS
@@ -770,116 +802,127 @@
 
             <!-- news post -->
             <div
-              class="row d-flex align-items-center  m-2"
+              class="row d-flex align-items-center m-2"
               style="color: var(--dark-text)"
             >
               <!-- col 1 -->
               <div class="col col-4 p-4">
-                <div><a href="#"> <img
-                    src="./imgs/assets/blo1-390x250.jpg"
-                    alt="" class="blog-post"
-                  />
-                  <!-- smal text -->
-                  <div class="py-3">
-                    <i class="fa-solid fa-user small-orange"></i>
-                    <small> Gogrin </small>
-                    <i class="fa-regular fa-clock small-orange"></i>
-                    <small> 17 Dec 2022</small>
-                  </div>
+                <div>
+                  <a href="#">
+                    <img
+                      src="./imgs/assets/blo1-390x250.jpg"
+                      alt=""
+                      class="blog-post"
+                    />
+                    <!-- smal text -->
+                    <div class="py-3">
+                      <i class="fa-solid fa-user small-orange"></i>
+                      <small> Gogrin </small>
+                      <i class="fa-regular fa-clock small-orange"></i>
+                      <small> 17 Dec 2022</small>
+                    </div>
 
-                  <h3 style="color: var(--green-text)">
-                    Where I live, I am sourrounded by fresh, organic food, so I
-                    eat really well.
-                  </h3>
-                  <p class="py-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aspernatur magnam dolores sapiente voluptas, laboriosam eius
-                    similique, hic facilis pariatur ab, eos odit consequuntur.
-                    Id, autem.
-                  </p>
-                  <span
-                    class="fs-5 fw-bold"
-                    style="color: var(--green-text)"
-                    >READ MORE...</span
-                  ></a>
-                 
+                    <h3 style="color: var(--green-text)">
+                      Where I live, I am sourrounded by fresh, organic food, so
+                      I eat really well.
+                    </h3>
+                    <p class="py-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aspernatur magnam dolores sapiente voluptas, laboriosam
+                      eius similique, hic facilis pariatur ab, eos odit
+                      consequuntur. Id, autem.
+                    </p>
+                    <span
+                      class="fs-5 fw-bold"
+                      style="color: var(--green-text)"
+                      >READ MORE...</span
+                    ></a
+                  >
                 </div>
               </div>
 
               <!-- col 2 -->
               <div class="col col-4 p-4">
-                <div ><a href="#"><img
-                    src="./imgs/assets/blo2-390x250.jpg"
-                    alt="" class="blog-post"
-                  />
-                  <!-- smal text -->
-                  <div class="py-3">
-                    <i class="fa-solid fa-user small-orange"></i>
-                    <small> Gogrin </small>
-                    <i class="fa-regular fa-clock small-orange"></i>
-                    <small> 16 Dec 2022</small>
-                  </div>
+                <div>
+                  <a href="#"
+                    ><img
+                      src="./imgs/assets/blo2-390x250.jpg"
+                      alt=""
+                      class="blog-post"
+                    />
+                    <!-- smal text -->
+                    <div class="py-3">
+                      <i class="fa-solid fa-user small-orange"></i>
+                      <small> Gogrin </small>
+                      <i class="fa-regular fa-clock small-orange"></i>
+                      <small> 16 Dec 2022</small>
+                    </div>
 
-                  <h3 style="color: var(--green-text)">
-                    Where I live, I am sourrounded by fresh, organic food, so I
-                    eat really well.
-                  </h3>
-                  <p class="py-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aspernatur magnam dolores sapiente voluptas, laboriosam eius
-                    similique, hic facilis pariatur ab, eos odit consequuntur.
-                    Id, autem.
-                  </p>
-                  <span
-                    class="fs-5 fw-bold"
-                    style="color: var(--green-text)"
-                    >READ MORE...</span
-                  ></a>
-                  
+                    <h3 style="color: var(--green-text)">
+                      Where I live, I am sourrounded by fresh, organic food, so
+                      I eat really well.
+                    </h3>
+                    <p class="py-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aspernatur magnam dolores sapiente voluptas, laboriosam
+                      eius similique, hic facilis pariatur ab, eos odit
+                      consequuntur. Id, autem.
+                    </p>
+                    <span
+                      class="fs-5 fw-bold"
+                      style="color: var(--green-text)"
+                      >READ MORE...</span
+                    ></a
+                  >
                 </div>
               </div>
 
               <!-- col 3-->
               <div class="col col-4 p-4">
-                <div ><a href="#"><img
-                    src="./imgs/assets/blo3-390x250.jpg"
-                    alt="" class="blog-post"
-                  />
-                  <!-- smal text -->
-                  <div class="py-3">
-                    <i class="fa-solid fa-user small-orange"></i>
-                    <small> Gogrin </small>
-                    <i class="fa-regular fa-clock small-orange"></i>
-                    <small> 17 Dec 2022</small>
-                  </div>
+                <div>
+                  <a href="#"
+                    ><img
+                      src="./imgs/assets/blo3-390x250.jpg"
+                      alt=""
+                      class="blog-post"
+                    />
+                    <!-- smal text -->
+                    <div class="py-3">
+                      <i class="fa-solid fa-user small-orange"></i>
+                      <small> Gogrin </small>
+                      <i class="fa-regular fa-clock small-orange"></i>
+                      <small> 17 Dec 2022</small>
+                    </div>
 
-                  <h3 style="color: var(--green-text)">
-                    Where I live, I am sourrounded by fresh, organic food, so I
-                    eat really well.
-                  </h2>
-                  <p class="py-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Aspernatur magnam dolores sapiente voluptas, laboriosam eius
-                    similique, hic facilis pariatur ab, eos odit consequuntur.
-                    Id, autem.
-                  </p>
-                  <span
-                    class="fs-5 fw-bold"
-                    style="color: var(--green-text)"
-                    >READ MORE...</span
-                  ></a>
-                  
+                    <h3 style="color: var(--green-text)">
+                      Where I live, I am sourrounded by fresh, organic food, so
+                      I eat really well.
+                    </h3>
+                    <p class="py-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aspernatur magnam dolores sapiente voluptas, laboriosam
+                      eius similique, hic facilis pariatur ab, eos odit
+                      consequuntur. Id, autem.
+                    </p>
+                    <span
+                      class="fs-5 fw-bold"
+                      style="color: var(--green-text)"
+                      >READ MORE...</span
+                    ></a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </section>
         <!-- BRAND -->
-          <section
+        <section
           class="container d-flex justify-content-center align-items-center"
         >
-          <div class="row row-cols-5 w-100 d-flex align-items-center g-4 m-2 position-relative">
-            <div class="col ">
+          <div
+            class="row row-cols-5 w-100 d-flex align-items-center g-4 m-2 position-relative"
+          >
+            <div class="col">
               <div class="p-5">
                 <img
                   src="./imgs/assets/brand1.png"
@@ -887,15 +930,15 @@
                 />
               </div>
             </div>
-            <div class="col ">
-              <div class=" p-5">
+            <div class="col">
+              <div class="p-5">
                 <img
                   src="./imgs/assets/brand4.png"
                   alt=""
                 />
               </div>
             </div>
-            <div class="col ">
+            <div class="col">
               <div class="p-5">
                 <img
                   src="./imgs/assets/brand3.png"
@@ -903,49 +946,47 @@
                 />
               </div>
             </div>
-            <div class="col ">
+            <div class="col">
               <div class="p-5">
                 <img
                   src="./imgs/assets/brand1.png"
                   alt=""
                 />
               </div>
-            
             </div>
-            <div class="col ">
+            <div class="col">
               <div class="p-5">
                 <img
                   src="./imgs/assets/brand2.png"
                   alt=""
                 />
               </div>
+            </div>
           </div>
-         
-        </section> 
-         <!-- FORM -->
-           <div
+        </section>
+        <!-- FORM -->
+        <div
           id="subscribe"
-          class="container "
+          class="container"
         >
-        <div class="d-flex align-self-center">
-           <h2 >SUBSCRIBE OUR NEWSLETTER</h2>
-        </div>
-         
-          <div  >
+          <div class="d-flex align-self-center">
+            <h2>SUBSCRIBE OUR NEWSLETTER</h2>
+          </div>
+
+          <div>
             <input
               type="email"
-              placeholder="your email" 
+              placeholder="your email"
             />
             <button class="btn-secondary-n">SEND</button>
           </div>
         </div>
-        
       </main>
 
       <!-- FOOTER -->
       <footer class="container-fluid m-0 p-0">
         <!-- top footer -->
-        <div class="footer-top row d-flex  mt-5">
+        <div class="footer-top row d-flex mt-5">
           <!-- col 1 -->
           <div class="col col-3">
             <img
