@@ -5,6 +5,8 @@
   --orange-bg: #ef9e03;
   --jumbotron-bg: url(../imgs/assets/H3-slider3.jpg);
   --shop-bg: url(../imgs/assets/shop-bg-img.jpg);
+  --sales-1-bg: url(../imgs/assets/offer-img01.jpg);
+  --sales-2-bg: url(../imgs/assets/offer-img02.jpg);
   --banner-bg: url(../imgs/assets/counter-bg.jpg);
   --title-bg: url(../imgs/assets/title-shap.png);
   --call-to-action-bg: url(../imgs/assets/call-to-bg.jpg);
@@ -43,6 +45,7 @@ body {
 
 small {
   color: var(--orange-text);
+  font-weight: bolder;
 }
 
 /* BUTTONS */
@@ -101,6 +104,22 @@ nav {
   background-image: var(--shop-bg);
 }
 
+/* SHOP */
+.sale-1 {
+  background-image: var(--sales-1-bg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15rem;
+}
+.sale-2 {
+  background-image: var(--sales-2-bg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15rem;
+}
+
 /* ------------------ */
 
 .container-fluid {
@@ -117,9 +136,9 @@ nav {
 }
 /* .content {
   background-color: coral;
-} */
+}
 
-/* .col {
+.col {
   background-color: pink;
   padding: 1rem;
 }
