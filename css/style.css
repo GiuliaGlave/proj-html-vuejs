@@ -44,6 +44,9 @@ body {
 }
 
 small {
+  font-weight: 100;
+}
+.small-orange {
   color: var(--orange-text);
   font-weight: bolder;
 }
@@ -125,11 +128,26 @@ nav {
   background-image: var(--banner-bg);
 }
 
+/* TOP TRENDING */
+.bg-title {
+  background-image: var(--title-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* CALL TO ACTION */
+
+.bg-slider {
+  background-image: var(--call-to-action-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* FOOTER */
 .footer-top {
   background-image: var(--footer-top-bg);
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -144,6 +162,7 @@ nav {
 .container {
   /* background-color: darkgrey; */
   width: 70%;
+  height: auto;
   padding: 2rem;
   margin-top: 2px;
 }

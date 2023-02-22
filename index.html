@@ -361,7 +361,7 @@
 
                 <div class="py-2">Fresh Apple</div>
                 <div>
-                  <small>$18</small>
+                  <small class="small-orange">$18</small>
                 </div>
               </div>
               <div class="col col-3">
@@ -385,8 +385,8 @@
 
                 <div class="py-2">Fresh Cobles</div>
                 <div>
-                  <small class="opacity-50"><del>$17</del></small>
-                  <small>$18</small>
+                  <small class="opacity-50 small-orange"><del>$17</del></small>
+                  <small class="small-orange">$18</small>
                 </div>
               </div>
               <div class="col col-3">
@@ -402,7 +402,7 @@
 
                 <div class="py-2">Fresh Waterlemon</div>
                 <div>
-                  <small>$15</small>
+                  <small class="small-orange">$15</small>
                 </div>
               </div>
               <div class="col col-3">
@@ -426,8 +426,8 @@
 
                 <div class="py-2">Organic Juice</div>
                 <div>
-                  <small class="opacity-50"><del>$20</del></small>
-                  <small>$15</small>
+                  <small class="opacity-50 small-orange"><del>$20</del></small>
+                  <small class="small-orange">$15</small>
                 </div>
               </div>
               <div class="col col-3">
@@ -451,8 +451,8 @@
 
                 <div class="py-2">Fresh Blueberries</div>
                 <div>
-                  <small class="opacity-50"><del>$19</del></small>
-                  <small>$14</small>
+                  <small class="opacity-50 small-orange"><del>$19</del></small>
+                  <small class="small-orange">$14</small>
                 </div>
               </div>
               <div class="col col-3">
@@ -468,7 +468,7 @@
 
                 <div class="py-2">organic lettuce</div>
                 <div>
-                  <small>$23</small>
+                  <small class="small-orange">$23</small>
                 </div>
               </div>
               <div class="col col-3">
@@ -492,8 +492,8 @@
 
                 <div class="py-2">Red Gajor</div>
                 <div>
-                  <small class="opacity-50"><del>$29</del></small>
-                  <small>$26</small>
+                  <small class="opacity-50 small-orange"><del>$29</del></small>
+                  <small class="small-orange">$26</small>
                 </div>
               </div>
               <div class="col col-3">
@@ -509,7 +509,7 @@
 
                 <div class="py-2">Naga pepper</div>
                 <div>
-                  <small>$21</small>
+                  <small class="small-orange">$21</small>
                 </div>
               </div>
             </div>
@@ -538,7 +538,7 @@
                 consectetur nam."
               </p>
               <span class="fw-bold">Martha Alex</span>
-              <small>Manager</small>
+              <small class="small-orange">Manager</small>
             </div>
           </div>
           <!-- sales -->
@@ -626,61 +626,113 @@
           class="container-fluid d-flex justify-content-center align-items-center"
         >
           <div class="content text-center p-2">
-            <div>
-              <span>Running week top selling</span>
-              <h1>TOP TRENDING ORGANIC FOOD</h1>
-            </div>
+            <div
+              class="content text-center p-2 m-4 d-flex flex-column align-items-center"
+            >
+              <div class="text-title-section bg-title w-50 align-items-center">
+                <span>Running week top selling</span>
+                <h2>
+                  <span style="color: var(--green-text)">TOP </span>TRENDING
+                  <span style="color: var(--green-text)">ORGANIC FOOD </span>
+                </h2>
+              </div>
 
-            <div class="row d-flex align-items-center g-4 m-2">
-              <div class="col col-3">
-                <div class="border">
-                  <img
-                    src="./imgs/assets/s5.jpg"
-                    alt=""
-                  />
-                  <span>Fresh Apple</span>
-                  <small>$18</small>
+              <!-- img product -->
+              <div
+                class="row d-flex gx-5 align-items-center mt-4 fw-bold"
+                style="color: var(--dark-text)"
+              >
+                <div class="col col-3 shadow-sm">
+                  <div class="d-flex flex-column">
+                    <div class="position-relative">
+                      <img
+                        src="./imgs/assets/s5.jpg"
+                        alt=""
+                        class="position-relative"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="py-2">Fresh Apple</div>
+                  <div>
+                    <small>$18</small>
+                  </div>
                 </div>
-              </div>
-              <div class="col col-3">
-                <div class="border">
-                  <img
-                    src="./imgs/assets/s5.jpg"
-                    alt=""
-                  />
-                  <span>Fresh Apple</span>
-                  <small>$18</small>
+                <div class="col col-3 shadow-sm">
+                  <div class="d-flex flex-column">
+                    <div class="position-relative">
+                      <img
+                        src="./imgs/assets/s2.jpg"
+                        alt=""
+                        class="position-relative"
+                      />
+                      <span
+                        class="position-absolute top-0 end-0 m-2 p-1"
+                        style="
+                          background-color: var(--orange-bg);
+                          font-size: 0.7rem;
+                        "
+                        >SALE!</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="py-2">Fresh Cobles</div>
+                  <div>
+                    <small class="opacity-50"><del>$17</del></small>
+                    <small><u> $18</u></small>
+                  </div>
                 </div>
-              </div>
-              <div class="col col-3">
-                <div class="border">
-                  <img
-                    src="./imgs/assets/s5.jpg"
-                    alt=""
-                  />
-                  <span>Fresh Apple</span>
-                  <small>$18</small>
+                <div class="col col-3 shadow-sm">
+                  <div class="d-flex flex-column">
+                    <div class="position-relative">
+                      <img
+                        src="./imgs/assets/s8.jpg"
+                        alt=""
+                        class="position-relative"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="py-2">Fresh Waterlemon</div>
+                  <div>
+                    <small>$15</small>
+                  </div>
                 </div>
-              </div>
-              <div class="col col-3">
-                <div class="border">
-                  <img
-                    src="./imgs/assets/s5.jpg"
-                    alt=""
-                  />
-                  <span>Fresh Apple</span>
-                  <small>$18</small>
+                <div class="col col-3 shadow-sm">
+                  <div class="d-flex flex-column">
+                    <div class="position-relative">
+                      <img
+                        src="./imgs/assets/s1.jpg"
+                        alt=""
+                        class="position-relative"
+                      />
+                      <span
+                        class="position-absolute top-0 end-0 m-2 p-1"
+                        style="
+                          background-color: var(--orange-bg);
+                          font-size: 0.7rem;
+                        "
+                        >SALE!</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="py-2">Organic Juice</div>
+                  <div>
+                    <small class="opacity-50"><del>$20</del></small>
+                    <small><u> $15</u></small>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- CONTACT US -->
+        <!--CALL TO ACTION -->
         <section
-          class="container d-flex justify-content-center align-items-center"
+          class="container bg-slider d-flex justify-content-center align-items-center"
         >
-          <div class="content text-center p-2">
+          <div class="content w-75 text-center p-2">
             <div>
               <span>HERE YOU CAN GET 100% FRESH ORGANIC FOOD</span>
               <h1>Best organic food up to 25% off for all product</h1>
@@ -692,9 +744,12 @@
                 error modi ab maxime, similique voluptatem ipsum.
               </p>
             </div>
-            <div class="d-flex justify-content-center">
-              <button class="m-2">&phone; + 088123 56 906</button>
-              <button class="m-2">APOINMENT</button>
+            <div class="d-flex justify-content-center my-3">
+              <button class="m-2 btn btn-primary">
+                <i class="fa-solid fa-square-phone"></i>
+                <span> +088123 56 906</span>
+              </button>
+              <button class="m-2 btn btn-secondary">APOINMENT</button>
             </div>
           </div>
         </section>
