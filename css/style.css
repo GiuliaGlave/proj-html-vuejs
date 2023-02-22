@@ -24,12 +24,12 @@ body {
   margin: auto;
   color: var(--white-text);
   font-family: "roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 #root {
   background-color: #fff;
   width: 100vw;
-  padding: 20px;
 }
 
 /* TEXT */
@@ -59,7 +59,11 @@ small {
   font-size: smaller;
   border: none;
   border-radius: 0 1rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--green-bg);
 }
 
 .btn-secondary {
@@ -71,6 +75,10 @@ small {
   padding: 0.5rem 1rem;
 }
 
+.btn-secondary:hover {
+  background-color: var(--orange-bg);
+}
+
 .btn-secondary-n {
   background-color: var(--green-bg);
   color: var(--white-text);
@@ -79,10 +87,11 @@ small {
   height: 100%;
   padding: 0.5rem 3rem;
 }
-header.container-fluid,
+
+/* header.container-fluid,
 footer.container-fluid {
   background-color: blue;
-}
+} */
 
 /* HEADER */
 .top-header {
@@ -108,7 +117,7 @@ nav {
 
 .seal {
   position: absolute;
-  left: 80rem;
+  left: 90rem;
 }
 
 /* ALL PRODUCTS */
@@ -215,4 +224,21 @@ ul {
   display: flex;
   gap: 1rem;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.header-icon:hover {
+  background-color: var(--orange-bg);
+}
+
+.blog-post:hover {
+  filter: brightness(50%);
 }
