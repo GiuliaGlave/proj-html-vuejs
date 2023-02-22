@@ -23,7 +23,7 @@
 body {
   margin: auto;
   color: var(--white-text);
-  font-family: "roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   overflow-x: hidden;
 }
 
@@ -117,7 +117,7 @@ nav {
 
 .seal {
   position: absolute;
-  left: 90rem;
+  left: 110rem;
 }
 
 /* ALL PRODUCTS */
